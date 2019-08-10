@@ -1,0 +1,208 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+
+/*--Global---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 18px;
+    background: radial-gradient(floralwhite 80%, #b2afa8); 
+    background-size: space;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 98%;
+    margin: auto;
+}
+/*---End of General---*/
+/*---Header---*/
+#header {
+    flex: none;
+    width: 65%;
+    margin: auto;
+    font-family: 'Monoton', cursive;
+    color:black;
+    text-align: center;
+    border-bottom: 3px double #408000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+h1 {
+    font-size: 350%;
+    font-weight: normal;
+    color: #408000;
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: -20px;
+    font-size: 140%;
+    font-weight: lighter;
+    color: dimgray;
+}
+/*---End of Header---*/
+/*---Main Content---*/
+.container {
+    display: flex;
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px 10px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+.main img {
+    margin: 0;
+    border: 3px double grey;
+}
+.main {
+    order: 1;
+}
+aside {
+    margin: auto;
+    font-family: 'Lekton', sans-serif;
+    font-size: 100%;
+    line-height: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    padding:15px 30px;
+    border-top: 3px double #408000;
+    border-bottom: 3px double #408000;
+    border-radius: 70px;
+}
+aside ul li {
+    text-decoration: none;
+    list-style-type: none;
+}
+aside a {
+    text-decoration: none;
+    color: rgba(12, 12, 13, 0.6);
+}
+aside ul li a:hover {
+    color: #009900;
+}
+.sideRight {
+    margin-left: 6%;
+    order: 2;
+}
+.sideLeft {
+    order: 0;
+    margin-right: 6%;
+}
+ /*---End of Main Content---*/
+/*---Footer---*/
+#footer {
+    flex: none;
+    width: 50%;
+    margin: auto;
+    font-family: 'Monoton', cursive;
+    font-size: 110%;
+    letter-spacing: 1px;
+    text-align: center;
+    border-top: 3px double #408000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+nav ul li {
+    display: inline-block;
+}
+nav a{
+    color: dimgray;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 120%;
+    padding: 0 10px;
+}
+nav a:hover {
+    color: #408000;
+}
+#copyright {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 10px;
+    font-family:  'Lekton', sans-serif;
+    color: dimgray;
+    padding-top: 10px;
+}
+/*---End of Footer---*/
+/*---Media Queries---*/
+@media screen and (max-width: 56em) {
+     .flex-container {
+        height: auto;
+        }
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        border: 3px double #009900;
+        background-color: floralwhite;
+        }
+    .main {
+        text-align: center;
+        order: 0;
+        padding: 10px 0px;
+        }  
+    aside {
+        border: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin: auto;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.7em;
+        } 
+    .sideLeft {
+        order: 1;
+        margin: auto;
+        padding-bottom:  0px;
+        padding-top: 10px;
+        }
+    .sideRight {
+        order: 2;
+        margin:auto;
+        padding-bottom: 10px;
+        padding-top: 0px;
+        }
+    #footer, #header {
+        height: auto;
+        width: 90%;
+        font-size: 70%;
+        background-color: floralwhite;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border: 3px double #009900;
+        }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin-top: 0;
+        line-height: 2em;
+        font-size: 14px;
+        }
+}
+@media screen and (max-width: 30em) {
+    #header {
+        font-size: 45%;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    main img {
+        width: 230px;
+    }
+}

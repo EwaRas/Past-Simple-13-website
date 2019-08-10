@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+@import url('https://fonts.googleapis.com/css?family=Lekton');
+
+
+
+@charset "utf-8";
+
+/*---General---*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: linear-gradient(90deg, #DCDCDC, #556B2F, #DCDCDC, #556B2F, #DCDCDC, #556B2F, #DCDCDC); 
+    font-family: 'Lekton', sans-serif;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+}
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: white;
+    margin:  20px auto;
+    padding: auto;
+    border: 10px double #6B8E23;
+    border-radius: 20px;
+}
+#header {
+    flex: none;
+    width: 100%;
+    margin: 10px auto 20px auto;
+    font-family: 'Monoton', cursive;
+    border-bottom: 5px double #6B8E23;
+    border-top: 5px double #6B8E23;
+    background-color: #DCDCDC;
+
+}
+h1 {
+    font-size: 350%;
+    font-weight: lighter;
+    color: #6B8E23;
+    text-align: right;
+    margin: auto;
+    letter-spacing: 2px;
+    background-color: none;
+    padding-right: 20px;
+}
+h2 {
+    width: 80%;
+    font-size: 250%;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 30px auto auto auto;
+    font-family: 'Lekton', sans-serif;
+    align-content: left;
+}
+.titleCentered {
+    text-align: center;
+}
+h3 {
+    width: 80%;
+    font size: 200%;
+    color: black;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin: 5px auto 0 auto;
+    text-align: left;
+}
+/*---End of General---*/
+/*---Main Content Wrapper...Names and Poetry ---*/
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0px auto 20px auto;
+    padding: 0px 10px;
+}
+/*---Titles of poems---*/
+h4 {
+    font-family: 'Lekton', sans-serif;
+    color: black;
+    font-size: 150%;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 4em;
+    padding:0;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.titleRight {
+    text-align: right;
+}
+.noTitle{
+    text-align: left;
+    text-indent: 5em;
+}
+/*---End of tiltes of poems---*/
+/*---Content: Poems---*/
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    margin: auto;
+}
+pre {
+    font-family: sans-serif;
+    width: 100%;
+    white-space: pre-line;
+    font-size: 100%;
+    line-height: 1.5em;
+    text-align: left;
+    padding:0;
+}
+.textJustifiedNowicka {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: .9em;
+    text-align: justify;
+    max-width: 600px;
+}
+.textJustifiedBulizanska {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: .8em;
+    text-align: justify;
+    max-width: 480px;
+}
+.textJustifiedBulizanska> em {
+    line-height: 1em;
+}
+.textJustified {
+    width: auto;
+    text-align: justify;
+    margin: auto;
+    font-size: 100%;
+}
+#leftJustify {
+    max-width: 650px;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    text-align: left;
+    margin-left: 2em;
+}
+.textArtist {
+    width: auto;
+    line-height: 1.5em;
+    text-align: justify;
+    font-size: 100%;
+}
+
+.paragraphRight {
+    width: auto;
+    text-align: right;
+}
+.indent {
+    text-indent: 3em;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.lowercaseRomanNumerals {
+    display: inline-block;
+    font-feature-settings: "onum";
+    font-size: 70%;
+}
+.smallFont {
+    font-size: 90%;
+    text-align: justify;
+}
+.indentSmall {
+    text-indent: 1em;
+    width: auto;
+    line-height: .7em;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 100%;
+}
+.centeredParagraph {
+    text-align: center;
+}
+#prose {
+    max-width: 650px;
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.5em;
+    margin: auto;
+    text-align: justify;
+}
+.proseParagraphLeft {
+    text-align: left;
+}
+.proseLongLine {
+    max-width: 800px;
+}
+span {
+    display: inline-block;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.fullSpan {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+th {
+    font-family: sans-serif;
+    text-align: left;
+    font-weight: normal;
+    font-size: 100%;
+    line-height: 1.3em;
+}
+.tableLeft{
+    padding-left: 70px;
+}
+.underline {
+    text-decoration: underline;
+}
+.ArchivesLinks {
+    font-size: 200%;
+    color: #6B8E23;
+    text-decoration: underline;
+}
+.ArchivesLinks:hover {
+    color: #D2691E;
+}
+.ArchivesDatesEditors {
+    font-size: 90%;
+    line-height: 1.2em;
+}
+img {
+    margin: 0 auto;
+    padding: 0;
+    width: auto;
+    max-width: 100%;
+}
+/*---Lists in R.Brammer's poems---*/
+ol {
+    counter-reset: list;
+    text-indent: 30px;
+    line-height: 1.3em;
+    padding-left: 40px;
+    white-space: 1em;
+    padding-bottom: 10px;
+}
+ol > li {
+    list-style: none;
+    text-indent: -1.2857em;
+    padding-left:  1.2857em;
+}
+ol > li:before {
+    content: counter(list, lower-alpha) ") ";
+    counter-increment: list;
+}
+/*---End of Lists in R.B's poems---*/
+/*---End of Content: Poems---*/
+/*---End of Main Content Wrapper---*/
+/*---Bio secion---*/
+#bio {
+    width: 80%;
+    margin: 6em auto 10px auto;
+    color: #2F4F4F;
+    text-align: justify;
+    line-height: 1.5em;
+    border-bottom: 3px double #2F4F4F;
+    border-top: 3px double #2F4F4F;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 20px;
+}
+h5, #bio p {
+    display: inline;
+    font-size: 110%;
+}
+h5 {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+.BookLinks {
+    text-decoration: none;
+    color: #6B8E23;
+}
+.BookLinks:hover {
+    color: #D2691E;
+}
+#bio a:hover {
+    color: #D2691E;
+}
+/*---End of Bio Section---*/
+/*---Footer Section---*/
+#footer {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    font-family: 'Monoton', cursive;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#footer nav a {
+    text-decoration: none;
+    font-size: 200%;
+    color: #6B8E23;
+    font-weight: lighter;
+}
+#footer nav a:hover {
+    color:  #D2691E;
+}
+/*---End of Footer Section---*/
+@media (max-width: 850px) {
+    body {
+        font-size: 12px;
+    }
+    #flex-container {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        border-radius: 0;
+    }
+    #header {
+        font-size: 60%;
+    }
+    h1 {
+        padding-right: 10px;
+    }
+    h2 {
+        font-size: 200%;
+    }
+    .main-content {
+        font-size: 100%;
+    }
+    .textJustifiedBulizanska, .textJustifiedNowicka {
+        max-width: 450px;
+        text-align: justify;
+        line-height: 1.5em;
+    }
+    .textJustifiedBulizanska > span.fullSpan {
+        display: none;
+    }
+    .textJustifiedNowicka > span.fullSpan {
+        display: none;
+    }
+    #leftJustify {
+        margin-left: 0;
+    }
+    .smallFont {
+        font-size: 75%;
+    }
+    .underline {
+        display: inline-block;
+        text-decoration: underline;
+    }
+    .tableLeft {
+    padding-left: 40px;
+    }
+    th {
+        font-size: 85%;
+    }
+    .ArchivesLinks {
+        display:inline-block;
+        font-size: 150%;
+    }
+    .ArchivesDatesEditors {
+        display: inline-block;
+        font-size: 70%;
+    }
+    #bio {
+        font-size:80%;
+    }
+    #footer{
+        font-size: 80%;
+    }
+    .textJustified {
+        line-height: 1.2em;
+        text-align: left;
+        white-space: wrap;
+    }
+    .textJustifiedNowicka {
+        line-height: 1.2em;
+    }
+    div.indentSmall {
+        line-height: 1.2em;
+        text-align: left;
+        white-space: wrap;
+    }
+}
+@media (max-width: 430px) {
+.noBreakMobile {
+        display: none;
+    }
+    .tableLeft {
+    padding-left: 30px;
+    }
+    th {
+        font-size: 75%;
+    }
+    
